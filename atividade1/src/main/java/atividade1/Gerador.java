@@ -11,7 +11,7 @@ public class Gerador {
 		public static void main(String[] args) {
 			String loginAluno = "pcosv";  
 			String path = "src/main/resources/";   
-			String arquivo = path + loginAluno + "jflex";    
+			String arquivo = path + loginAluno + ".jflex";    
 			File file = new File(arquivo);	
 			jflex.Main.generate(file);	
 		}

@@ -9,11 +9,18 @@
 %public
 %standalone
 %class Minijava
+//%class ScannerJF
+//%implements Scanner
 %eofclose
+//%function Token 
+//%type Token
+
+%%
 
 /* Insira as regras léxicas abaixo */
 
-%
+[\n\r\t\f]+ {}
+
     
 /* Insira as regras léxicas no espaço acima */     
      

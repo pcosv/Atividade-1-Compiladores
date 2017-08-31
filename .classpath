@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="atividade1/src/main/java"/>
+	<classpathentry kind="src" path="atividade1/src/test/java"/>
+	<classpathentry kind="src" path="atividade1/src/test/resources"/>
+	<classpathentry kind="src" path="atividade1/target/test-classes"/>
+	<classpathentry kind="lib" path="atividade1/target/atividade1-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="atividade1/target/classes"/>
+</classpath>
