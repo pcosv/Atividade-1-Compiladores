@@ -48,9 +48,7 @@ pontuation = [;|.|,|(|)|{|}|"["|"]"]
 "false" {System.out.println("Token FALSE");}
 "this" {System.out.println("Token THIS");}
 "new" {System.out.println("Token NEW");}
-"System.out.println" {System.out.println("Token SYSTEMOUTPRINTLN");}
-    
-/* Insira as regras léxicas no espaço acima */     
+"System.out.println" {System.out.println("Token SYSTEMOUTPRINTLN");}   
 
 {integer} {System.out.println("Token INTEIRO ("+yytext()+")");}
 {whitespace} { }
@@ -66,5 +64,7 @@ pontuation = [;|.|,|(|)|{|}|"["|"]"]
 {multOperator} { System.out.println("Token MULTIPLICAÇAO ("+yytext()+")");}
 {comparisonOperators} {System.out.println("Token COMPARAÇAO ("+yytext()+")");}
 {pontuation} {System.out.println("Token PONTUAÇAO ("+yytext()+")");}
+
+/* Insira as regras léxicas no espaço acima */  
 
 . { throw new RuntimeException("Caractere ilegal! '" + yytext() + "' na linha: " + yyline + ", coluna: " + yycolumn); }
